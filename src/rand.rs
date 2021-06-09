@@ -195,7 +195,7 @@ use self::darwin::fill as fill_impl;
 #[cfg(any(target_os = "fuchsia"))]
 use self::fuchsia::fill as fill_impl;
 
-#[cfg(any(target_os = "solid"))]
+#[cfg(any(target_os = "solid-asp3"))]
 use self::solid::fill as fill_impl;
 
 #[cfg(any(target_os = "android", target_os = "linux"))]
@@ -435,7 +435,7 @@ mod fuchsia {
     }
 }
 
-#[cfg(any(target_os = "solid"))]
+#[cfg(any(target_os = "solid-asp3"))]
 mod solid {
     use crate::error;
 
