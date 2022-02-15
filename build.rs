@@ -547,6 +547,7 @@ fn cc(
     if target.os != "none"
         && target.os != "redox"
         && target.os != "windows"
+        && target.os != "solid_asp3"
         && target.arch != "wasm32"
     {
         let _ = c.flag("-fstack-protector");
